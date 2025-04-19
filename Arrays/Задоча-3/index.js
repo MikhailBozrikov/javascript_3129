@@ -33,11 +33,12 @@ function renderList(arr) {
 // Добавление элемента в массив
 addBtn.addEventListener('click', function () {
   const item = prompt("Укажите имя для добавления");
-  if (item === '') {
+  if (!item) {
     alert('Имя не введено');
-  } else {
-    usersAge.push(item);
+    return;
   };
+  usersAge.push(item);
+
   renderList(sort(usersAge));
 });
 

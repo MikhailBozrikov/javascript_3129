@@ -6,7 +6,7 @@ const wrapper = document.createElement("div");
 const title = document.createElement("h1");
 const addBtn = document.createElement("button");
 const filterBtn = document.createElement("button");
-const listEl = document.createElement("ul"); 
+const listEl = document.createElement("ul");
 
 page.classList.add('container');
 wrapper.classList.add('wrapper');
@@ -17,7 +17,7 @@ filterBtn.classList.add("filterBtn");
 listEl.classList.add('listEl');
 title.textContent = "Рост учеников";
 addBtn.textContent = "Добавить рост";
-filterBtn.textContent = "Фильтровать"; 
+filterBtn.textContent = "Фильтровать";
 
 wrapper.append(title, addBtn, filterBtn, listEl);
 page.append(wrapper);
@@ -26,23 +26,23 @@ document.body.append(page);
 function renderList(usersAge) {
   listEl.innerHTML = "";
   for (let i = 0; i < usersAge.length; i++) {
-    const liEl = document. createElement("li");
+    const liEl = document.createElement("li");
     liEl.textContent = `${i + 1}) ${usersAge[i]}`;
-    listEl. append(liEl);
+    listEl.append(liEl);
   };
 };
 
 // Добавление элемента в массив
 addBtn.addEventListener('click', function () {
   const item = prompt("Укажите рост ученика для добавления");
-  if (item === '') {
-     alert('Рост не введён');
-   } else { 
-    usersAge.push(item);
-   };
+  if (!item) {
+    alert('Рост не введён');
+    return;
+  };
+  usersAge.push(item);
 
-   renderList(usersAge);
- });
+  renderList(usersAge);
+});
 
 //Фильтрация 
 function filter(arr, minAge) {
@@ -57,6 +57,10 @@ function filter(arr, minAge) {
 
 filterBtn.onclick = function () {
   const minAge = prompt("Введите рост ученика");
+  if (!minAge) {
+    alert('Рост не введён');
+    return;
+  };
   const result = filter(usersAge, minAge);
 
   renderList(result);

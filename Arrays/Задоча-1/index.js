@@ -6,7 +6,7 @@ const wrapper = document.createElement("div");
 const title = document.createElement("h1");
 const addBtn = document.createElement("button");
 const searchBtn = document.createElement("button");
-const listEl = document.createElement("ul"); 
+const listEl = document.createElement("ul");
 
 page.classList.add('container');
 wrapper.classList.add('wrapper');
@@ -25,6 +25,7 @@ document.body.append(page);
 
 // Добавляем в DOM массив
 function renderList(arr) {
+  
   listEl.innerHTML = "";
   for (let i = 0; i < arr.length; i++) {
     const liEl = document.createElement("li");
@@ -34,16 +35,16 @@ function renderList(arr) {
 };
 
 // Добавление элемента в массив
- addBtn.addEventListener('click', function () {
+addBtn.addEventListener('click', function () {
   const item = prompt("Укажите название книги для добавления");
-  if (item === '') {
-     alert('Название не введено');
-   } else { 
-     users.push(item);
-   };
-   console.log(users);
-   renderList(users);
- });
+  if (!item) {
+    alert('Название не введено');
+    return;
+  };
+  users.push(item);
+
+  renderList(users);
+});
 
 // Функция поиска
 function find(arr, search) {
@@ -55,20 +56,25 @@ function find(arr, search) {
       break;
     };
   };
-  return result
+  return result;
 };
 
 // Поиск элемента кликом
 searchBtn.onclick = function () {
   const search = prompt("Укажите имя для поиска");
-  const findIndex = find(users, search); 
+  if (!search) {
+    alert('Название не введено');
+    return;
+  };
+  const findIndex = find(users, search);
 
   if (findIndex > -1) {
     document.querySelector(`li:nth-child(${findIndex + 1})`).style.background = "#FFFF00"
-  } else {
-    alert("Имя не найдено");
+    return;
   };
 };
 
 renderList(users);
+
+
 
