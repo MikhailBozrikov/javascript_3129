@@ -1,17 +1,8 @@
-const pictureOne = document.getElementById("img-1");
-const pictureTwo = document.getElementById("img-2");
-const pictureThree = document.getElementById("img-3");
-const pictureFour = document.getElementById("img-4");
+const picture = document.querySelectorAll(".gallery__img");
 const display = document.querySelector(".content__display");
 
-pictureOne.onclick = function () {
-  pictureFour.src = 'img/picture-1.jpg';
-}
-
-pictureTwo.onclick = function () {
-  pictureFour.src = 'img/picture-2.jpg';
-}
-
-pictureThree.onclick = function () {
-  pictureFour.src = 'img/picture-3.jpg';
-}
+picture.forEach((el) => {
+  el.addEventListener('click', () => {
+    display.innerHTML = `<img src="${el.src}" alt="" width="1488" height="1000">`;
+  });
+});

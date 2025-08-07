@@ -1,5 +1,3 @@
-const users = [];
-
 const page = document.createElement("div");
 const wrapper = document.createElement("div");
 const addBtn = document.createElement("button");
@@ -19,30 +17,14 @@ wrapper.append(listEl, addBtn, deleteBtn);
 page.append(wrapper);
 document.body.append(page);
 
-// Добавляем в DOM массив
-function renderList(arr) {
-  listEl.innerHTML = "";
-  for (let i = 0; i < arr.length; i++) {
-    const liEl = document.createElement("li");
-    liEl.textContent = `${arr[i]}`;
-    listEl.append(liEl);
-  };
-};
-
-// Добавление элемента в массив
 addBtn.addEventListener('click', function () {
-  const item = "Добавить элемент списка"
-  users.push(item);
-
-  renderList(users);
+  const item = document.createElement('li');
+  item.textContent = "Добавить элемент списка";
+  listEl.append(item);
 });
 
-// Удаление элемента в массив
-deleteBtn.onclick = function () {
-  document.querySelector('li').remove();
-
-  users.splice(0, 1);
-};
-
-renderList(users);
-
+deleteBtn.addEventListener('click', function () {
+  if (listEl.lastChild) {
+    listEl.lastChild.remove();
+  }
+});
