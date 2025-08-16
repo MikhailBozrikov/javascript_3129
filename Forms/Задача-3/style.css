@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: "IBMPlexSans", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.form__data {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.form__label {
+  display: inline-block;
+  margin: 0 0 20px 0;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.form__field {
+  border: 1px solid #C8C8CA;
+  height: 30px;
+  width: 250px;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 35px;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(141, 140, 140);
+  outline: none;
+}
+
+.form__select {
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 35px;
+  border-radius: 5px;
+  color: rgb(141, 140, 140);
+  border: 1px solid #C8C8CA;
+}
+
+.form__option {
+ font-weight: 100;
+  font-size: 20px;
+  line-height: 35px;
+  color: rgb(141, 140, 140);
+}
+
+.card {
+  display: block;
+  width: 500px;
+  min-height: 200px;
+  border: 1px solid darkgoldenrod;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 35px;
+  margin: 0;
+  color: black;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="form">
+    <div class="container">
+      <h1 class="form__title">Форма опроса</h1>
+      <fieldset class="fieldset">
+        <form class="form-box" action="#" method=" post">
+          <div class="form__data">
+            <label class="form__label" for="user-name">Имя пользователя:
+              <input class="form__field" id="user-name" type="text" name="user-name" > 
+            </label>
+            <label class="form__label" for="user-mail">Email:
+              <input class="form__field"  type="email" name="user-email" id="user-email"  >
+            </label>
+          </div>
+
+          <div class="form__radio">
+            <span class="form__span">Пол:</span>
+            <input class="form__radio-field " id="radio-male" type="radio" name="floor" value="Мужской"  >
+            <label class="form__checkbox-label" for="radio-male">
+              Мужской
+            </label>
+            <input class="form__radio-field " id="radio-female" type="radio" name="floor" 
+              value="Женский" >
+            <label class="form__checkbox-label" for="radio-female">
+              Женский
+            </label>
+          </div>
+
+          <label class="form__range" for="status">
+            Оценка сервиса:
+            <input id="status" type="range" value="0" min="0" max="10" step="1">
+          </label>
+
+          <div class="form__checkbox">
+            <span class="form__span">Интересы пользователя</span>
+            <label class="form__checkbox-label " for="sport">
+              <input class="form__checkbox-field " type="checkbox" id="sport" name="interest" value=" Спорт ">
+              Спорт
+            </label>
+            <label class="form__checkbox-label " for="music">
+              <input class="form__checkbox-field " type="checkbox" id="music" name="interest" value=" Музыка ">
+              Музыка
+            </label>
+            <label class="form__checkbox-label " for="journeys">
+              <input  class="form__checkbox-field " type="checkbox" id="journeys" name="interest" value=" Путишествия ">
+              Путишествия
+            </label>
+            <label class="form__checkbox-label " for="cinema">
+              <input class="form__checkbox-field " type="checkbox" id="cinema" name="interest" value=" Кино ">
+              Кино
+            </label>
+          </div>
+
+          <label class="form__textarea-label" for="user-textarea">
+            Дополнительные комментарии:
+            <textarea class="form__textarea " id="user-textarea" name="text" placeholder="Text"></textarea>
+          </label>
+
+          <button class="form__btn" type="submit">Отправить</button>
+
+        </form>
+      </fieldset>
+
+      <script src="index.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>
