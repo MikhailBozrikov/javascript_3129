@@ -12,24 +12,24 @@
   <div class="form">
     <div class="container">
       <h1 class="form__title">Калькулятор стоимости доставки </h1>
-      
-        <form class="form-box" action="#" method=" post">
-          <div class="form__data">
-            <label class="form__label" for="product-title">Название товаро:
-              <input class="form__field" id="product-title" type="text" name="product-title" required> <!--required-->
-            </label>
-            <label class="form__label" for="product-weight">Вес товара (кг):
-              <input class="form__field" id="product-weight" type="number" name="product-weight" required >
-            </label>
-            <label class="form__label" for="product-distance">Расстояние доставки (км):
-              <input class="form__field" id="product-distance" type="number" name="product-distance" required>
-            </label>
-          </div>
 
-          <button class="form__btn" type="submit">Добавить товар</button>
-        </form>
-      <p class="text-error">Пожалуйста введите корректое значение для веса и расстояния</p>
+      <form class="form-box" action="#" method="post">
+        <div class="form__data">
+          <label class="form__label" for="product-title">Название товаро:
+            <input class="form__field" id="product-title" type="text" name="product-title" required>
+          </label>
+          <label class="form__label" for="product-weight">Вес товара (кг):
+            <input class="form__field" id="product-weight" type="number" name="product-weight" required>
+          </label>
+          <label class="form__label" for="product-distance">Расстояние доставки (км):
+            <input class="form__field" id="product-distance" type="number" name="product-distance" required>
+          </label>
+        </div>
+        <button class="form__btn" type="submit">Добавить товар</button>
+      </form>
       
+      <p class="text-error">Пожалуйста введите корректое значение для веса и расстояния</p>
+
       <table class="product-table">
         <thead>
           <tr class="product__header">
@@ -39,13 +39,12 @@
             <th class="product__price">Стоимость доставки</th>
           </tr>
         </thead>
-
         <tbody class="product__tbody"></tbody>
       </table>
 
-      <script src="index.js"></script>
     </div>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>

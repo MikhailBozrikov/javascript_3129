@@ -14,24 +14,23 @@
     <div class="container">
       <h1 class="form__title">Форма опроса</h1>
       <fieldset class="fieldset">
-        <form class="form-box" action="#" method=" post">
+        <form class="form-box" action="#" method="post">
           <div class="form__data">
             <label class="form__label" for="user-name">Имя пользователя:
-              <input class="form__field" id="user-name" type="text" name="user-name" > 
+              <input class="form__field" id="user-name" type="text" name="user-name" required>
             </label>
-            <label class="form__label" for="user-mail">Email:
-              <input class="form__field"  type="email" name="user-email" id="user-email"  >
+            <label class="form__label" for="user-email">Email:
+              <input class="form__field" type="email" name="user-email" id="user-email" required>
             </label>
           </div>
 
           <div class="form__radio">
             <span class="form__span">Пол:</span>
-            <input class="form__radio-field " id="radio-male" type="radio" name="floor" value="Мужской"  >
+            <input class="form__radio-field " id="radio-male" type="radio" name="gender" value="Мужской">
             <label class="form__checkbox-label" for="radio-male">
               Мужской
             </label>
-            <input class="form__radio-field " id="radio-female" type="radio" name="floor" 
-              value="Женский" >
+            <input class="form__radio-field " id="radio-female" type="radio" name="gender" value="Женский">
             <label class="form__checkbox-label" for="radio-female">
               Женский
             </label>
@@ -39,25 +38,25 @@
 
           <label class="form__range" for="status">
             Оценка сервиса:
-            <input id="status" type="range" value="0" min="0" max="10" step="1">
+            <input id="status" type="range" name="range" value="0" min="0" max="10" step="1">
           </label>
 
           <div class="form__checkbox">
             <span class="form__span">Интересы пользователя</span>
             <label class="form__checkbox-label " for="sport">
-              <input class="form__checkbox-field " type="checkbox" id="sport" name="interest" value=" Спорт ">
+              <input class="form__checkbox-field " type="checkbox" id="sport" name="interest" value="Спорт">
               Спорт
             </label>
             <label class="form__checkbox-label " for="music">
-              <input class="form__checkbox-field " type="checkbox" id="music" name="interest" value=" Музыка ">
+              <input class="form__checkbox-field " type="checkbox" id="music" name="interest" value="Музыка">
               Музыка
             </label>
             <label class="form__checkbox-label " for="journeys">
-              <input  class="form__checkbox-field " type="checkbox" id="journeys" name="interest" value=" Путишествия ">
+              <input class="form__checkbox-field " type="checkbox" id="journeys" name="interest" value="Путишествия">
               Путишествия
             </label>
             <label class="form__checkbox-label " for="cinema">
-              <input class="form__checkbox-field " type="checkbox" id="cinema" name="interest" value=" Кино ">
+              <input class="form__checkbox-field " type="checkbox" id="cinema" name="interest" value="Кино">
               Кино
             </label>
           </div>
@@ -71,10 +70,11 @@
 
         </form>
       </fieldset>
-
-      <script src="index.js"></script>
+      <div class="result"></div>
     </div>
   </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
