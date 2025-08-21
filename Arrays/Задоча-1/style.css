@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: "IBMPlexSans", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.wrapper {
+  padding: 50px 10px 10px 40px;
+}
+
+.addBtn {
+  color: white;
+  background: green;
+  margin-right: 20px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 40px ;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.searchBtn {
+  color: white;
+  background: blue;
+  margin-right: 20px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 40px ;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.listEl {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 700;
+  width: 600px;
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
