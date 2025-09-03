@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Работа с сервером</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <form id="film-form">
+    <h1>Работа с сервером</h1>
+    <label for="title">Название:</label><br />
+    <input class="film-inp" type="text" id="title" name="title" required><br>
+    <label for="genre">Жанр:</label><br />
+    <input class="film-inp"  type="text" id="genre" name="genre" required><br>
+    <label for="releaseYear">Год:</label><br>
+    <input class="film-inp"  type="number" id="releaseYear" name="releaseYear" required><br>
+    <input type="checkbox" id="isWatched" name="isWatched" value="true">
+    <label for="isWatched">Успели посмотреть?</label><br>
+    <!-- <input type="submit" value="Submit"> -->
+    <button class="submit" type="submit">Submit</button>
+  </form>
+
+  <h2>Фильтрация</h2>
+  <div class="film__section">
+
+    <form action="#" class="filter__form">
+      <input class="filter__title" name="title" type="text" placeholder="Название">
+      <input class="filter__genre" name="genre" type="text" placeholder="Жанр">
+      <input class="filter__releaseYear" name="releaseYear" type="text" placeholder="Год">
+      <select class="filter__select"  name="isWatched">
+        <option class="filter__option" value="">Все</option>
+        <option class="filter__option" value="true">Просмотренный</option>
+        <option class="filter__option" value="false">Не просмотренный</option>
+      </select>
+    </form>
+    
+    <button class="film__delete-all-btn">Удалить&nbsp;всё</button>
+  </div>
+
+  <table id="film-table">
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Жанр</th>
+        <th>Год</th>
+        <th>Успели посмотреть?</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody id="film-tbody">
+      <!-- Rows will be inserted here -->
+      <!-- Здесь будут вставлены строки -->
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
