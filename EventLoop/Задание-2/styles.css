@@ -1,0 +1,27 @@
+.html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0px;
+  margin-top: 40px;
+  background-color: blueviolet;
+  border-radius: 3px;
+  margin-left: 30px;
+  opacity: 1;
+}
