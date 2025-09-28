@@ -1,0 +1,42 @@
+.html {
+	box-sizing: border-box;
+}
+
+.img {
+  max-width: 100%;
+  max-width: 200px;
+  object-fit: cover;
+  border: 2px solid rgb(211, 207, 207);
+}
+
+body {
+  background-color: white;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box {
+  display: flex;
+  gap: 5px;
+  max-width: 500px;
+  margin-bottom: 10px;
+  min-height: 130px;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0px;
+  margin-top: 20px;
+  background-color: blueviolet;
+  border-radius: 3px;
+  opacity: 1;
+  margin-bottom: 20px;
+}
