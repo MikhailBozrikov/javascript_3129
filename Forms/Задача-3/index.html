@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="form">
+    <div class="container">
+      <h1 class="form__title">Оформление банковской карты </h1>
+
+      <form class="form-box" action="#" method=" post">
+        <div class="form__data">
+          <label class="form__label" for="text">Текст банковской карты:
+            <input class="form__field" id="text" type="text" name="text" required>
+          </label>
+          <label class="form__label" for="color">Выбор цвета банковской карты:
+            <select class="form__select" id="color" name="color">
+              <option class="form__option" value="red">Красный</option>
+              <option class="form__option" value="blue">Синий</option>
+              <option class="form__option" value="green">Зелёный</option>
+            </select>
+          </label>
+        </div>
+      </form>
+
+      <p class="card" id="card"></p>
+
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

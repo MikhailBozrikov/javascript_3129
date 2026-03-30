@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: "IBMPlexSans", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.fieldset {
+  margin: 0 0 30px;
+  padding: 0;
+ 
+  border: none;
+}
+
+.form__data {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.form__label {
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+.form__field {
+  border: 1px solid #C8C8CA;
+}
+
+.form__radio {
+  margin: 0 0 20px 0;
+}
+
+.form__range {
+  margin: 0 0 20px 0;
+  display: flex;
+}
+
+.form__checkbox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+
+.form__textarea-label {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__textarea {
+  resize: none;
+  color: #7b7b7c;
+  width: 400px;
+  min-height: 114px;
+  border: 1px solid #C8C8CA;
+}
+
+.form__btn  {
+  border: 1px solid #C8C8CA;
+  background-color:transparent ;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+}

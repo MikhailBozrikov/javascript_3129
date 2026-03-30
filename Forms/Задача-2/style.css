@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: "IBMPlexSans", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.form__data {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.form__label {
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+.form__field {
+  border: 1px solid #C8C8CA;
+}
+
+.text-error {
+  display: none;
+  color: red;  
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.form__btn {
+  border: 0;
+  background-color: transparent;
+  margin: 0 0 40px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: blue;
+  color: #FFFFFF;
+  padding: 8px;
+}
